@@ -16,7 +16,7 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
 
     Page<Animal> findByNameContaining(String name, Pageable pageable);
 
-    Page<Animal> findByCustomerName(String customerName, Pageable pageable);
+    Page<Animal> findByCustomerNameContaining(String customerName, Pageable pageable);
 
 
 }
